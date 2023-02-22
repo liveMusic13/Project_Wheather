@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/icon/logo.png" sizes="16x16">
+  <title>Wheather.by</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__block-logo">
+          <h1 class="header__logo">
+            Wheather.by
+          </h1>
+          <img src="img/icon/logo.png" alt="Wheather.by-Image" class="header__icon">
+        </div>
+        <div class="header__block-search">
+          <input type="search" class="header__search-city" placeholder="Введите город">
+          <button type="submit" class="header__search-button">Посмотреть</button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="wheather">
+        <div class="wheather__container">
+          <div class="wheather__output-block">
+            <!-- <h2 class="wheather__title">${data.name}</h2>
+            <div class="wheather__block-content">
+              <p class="wheather__pressure">Давление: ${data.main.pressure}</p>
+              <div class="wheather__block-temperature">
+                <p class="wheather__temperature">Температура: ${data.main.temp} С</p>
+                <img class="wheather__image" src="http://openweathermap.org/img/wn/${data.weather[0].icon}.png"
+                  alt="image">
+                <p class="wheather__description">${data.weather[0].description}</p>
+                <p class="wheather__humidity">Влажность: ${data.main.humidity} %</p>
+                <p class="wheather__temperature wheather__temperature_feels-like">Ощущаеться как:
+                  ${data.main.feels_like} С</p>
+              </div>
+              <div class="wheather__block-wind">
+                <p class="wheather__wind-speed">Скорость ветра: ${data.wind.speed}</p>
+                <p class="wheather__wind-gust">Порывы ветра: ${data.wind.gust}</p>
+                <p class="wheather__wind-deg">Ветер северный: ${data.wind.deg}</p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__social">
+          <a href="https://t.me/DmitriyKovalenko13" class="footer__link-telegram"><img
+              src="img/icon_social/telegram.png" alt="telegram" class="footer__telegram"></a>
+          <a href="https://vk.com/id165406586" class="footer__link-telegram"><img src="img/icon_social/vk.png" alt="vk"
+              class="footer__vk"></a>
+        </div>
+        <div class="footer_block-athor">
+          <img src="img/iconAuthor.png" alt="c" class="footer__image-athor">
+          <p class="footer__author">Коваленко Д.В.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+  <!-- <script src="js/test.js"></script> -->
+  <!-- <script src="js/helpScript.js"></script> -->
+</body>
+
+</html>
