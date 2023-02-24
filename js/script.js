@@ -51,6 +51,7 @@ function pageLoaded() {
   }
 
   function writeOutput(message) {
+    wheatherOutput.style.display = "flex";
     wheatherOutput.innerHTML = message;
   }
 
