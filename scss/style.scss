@@ -51,17 +51,29 @@ body {
   gap: 30px;
   background-color: rgb(150, 228, 252);
   padding: 5px;
+
+  @media (max-width: 450px) {
+    height: 300px;
+  }
 }
 
 .wheather__block-content {
   display: flex;
   gap: 10px;
   font-size: 16px;
+
+  @media (max-width: 450px) {
+    font-size: 14px;
+  }
 }
 
 .wheather__title {
   font-size: 25px;
   font-weight: 700;
+
+  @media (max-width: 450px) {
+    font-size: 18px;
+  }
 }
 
 .wheather__block-temperature {
@@ -70,11 +82,20 @@ body {
   gap: 10px;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 450px) {
+    gap: 5px;
+  }
 }
 
 .wheather__image {
   width: 80px;
   height: 80px;
+
+  @media (max-width: 450px) {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .wheather__temperature {}
@@ -93,6 +114,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  @media (max-width: 450px) {
+    gap: 5px;
+  }
 }
 
 .wheather__wind-speed {}

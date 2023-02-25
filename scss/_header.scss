@@ -18,9 +18,16 @@
 .header__logo {
   font-size: 32px;
   font-weight: 700;
+
+  @media (max-width: 450px) {
+    font-size: 25px;
+  }
 }
 
-.header__icon {}
+.header__icon {
+  width: 96px;
+  height: 96px;
+}
 
 .header__block-search {
   display: flex;
@@ -42,6 +49,13 @@
   &::placeholder {
     color: rgb(22, 30, 53);
   }
+
+  @media (max-width: 450px) {
+    width: 150px;
+    height: 25px;
+    font-size: 14px;
+    border: 2px solid black;
+  }
 }
 
 .header__search-button {
@@ -52,4 +66,11 @@
   background-color: rgb(150, 228, 252);
   font-size: 16px;
   outline: none;
+
+  @media (max-width: 450px) {
+    width: 100px;
+    height: 20px;
+    border: 2px solid black;
+    font-size: 12px;
+  }
 }

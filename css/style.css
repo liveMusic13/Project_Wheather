@@ -78,6 +78,16 @@ body {
   font-size: 32px;
   font-weight: 700;
 }
+@media (max-width: 450px) {
+  .header__logo {
+    font-size: 25px;
+  }
+}
+
+.header__icon {
+  width: 96px;
+  height: 96px;
+}
 
 .header__block-search {
   display: -webkit-box;
@@ -115,6 +125,14 @@ body {
 .header__search-city::placeholder {
   color: rgb(22, 30, 53);
 }
+@media (max-width: 450px) {
+  .header__search-city {
+    width: 150px;
+    height: 25px;
+    font-size: 14px;
+    border: 2px solid black;
+  }
+}
 
 .header__search-button {
   width: 150px;
@@ -124,6 +142,14 @@ body {
   background-color: rgb(150, 228, 252);
   font-size: 16px;
   outline: none;
+}
+@media (max-width: 450px) {
+  .header__search-button {
+    width: 100px;
+    height: 20px;
+    border: 2px solid black;
+    font-size: 12px;
+  }
 }
 
 .footer {
@@ -226,6 +252,11 @@ body {
   background-color: rgb(150, 228, 252);
   padding: 5px;
 }
+@media (max-width: 450px) {
+  .wheather__output-block {
+    height: 300px;
+  }
+}
 
 .wheather__block-content {
   display: -webkit-box;
@@ -234,10 +265,20 @@ body {
   gap: 10px;
   font-size: 16px;
 }
+@media (max-width: 450px) {
+  .wheather__block-content {
+    font-size: 14px;
+  }
+}
 
 .wheather__title {
   font-size: 25px;
   font-weight: 700;
+}
+@media (max-width: 450px) {
+  .wheather__title {
+    font-size: 18px;
+  }
 }
 
 .wheather__block-temperature {
@@ -256,10 +297,21 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 450px) {
+  .wheather__block-temperature {
+    gap: 5px;
+  }
+}
 
 .wheather__image {
   width: 80px;
   height: 80px;
+}
+@media (max-width: 450px) {
+  .wheather__image {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .wheather__description {
@@ -275,4 +327,9 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
+}
+@media (max-width: 450px) {
+  .wheather__block-wind {
+    gap: 5px;
+  }
 }
