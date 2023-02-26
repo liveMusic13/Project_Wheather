@@ -29,8 +29,8 @@ function pageLoaded() {
       })
       .then((data) => {
 
-        resultLat = data[0].lon;
-        resultLon = data[0].lat;
+        resultLat = data[0].lat;
+        resultLon = data[0].lon;
         console.log(resultLat);
         console.log(resultLon);
         //возвращаем данные, чтобы у всего запроса было, что возвращать и присвоить в переменную
@@ -60,6 +60,7 @@ function pageLoaded() {
   }
 
   function writeOutput(message) {
+    wheatherOutput.style.display = "flex";
     wheatherOutput.innerHTML = message;
   }
 

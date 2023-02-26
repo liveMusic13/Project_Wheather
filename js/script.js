@@ -89,7 +89,7 @@ function pageLoaded() {
   }
 
   function fixUndefined(data, unit) {
-    if (data === "undefined" || !data) {
+    if (!data) {
       return "Данные не доступны";
     } else {
       return data + unit;
