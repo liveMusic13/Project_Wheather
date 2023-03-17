@@ -11,9 +11,38 @@ const apiKey = "7c41cd25804bb459e4b37ce55b19c5f7";
 function pageLoaded() {
   let inputSearch = document.querySelector(".header__search-city");
   let buttonSearch = document.querySelector(".header__search-button");
+  let buttonSearchGeo = document.querySelector(".header__search-button_geo");
   let wheatherOutput = document.querySelector(".wheather__output-block");
 
   buttonSearch.addEventListener('click', sendRequest);
+
+  navigator.geolocation.getCurrentPosition((position) => {
+    const lat = position.coords.latitude;
+    const lon = position.coords.longitude;
+
+    buttonSearchGeo.addEventListener('click', sendRequestGeo);
+
+    function sendRequestGeo() {
+      let requestURLGeo = formatURLGeo();
+      fetch(requestURLGeo)
+        .then(response => {
+          return response.json();
+        })
+        .then(data => {
+          writeOutput(formatOutput(data));
+        })
+    }
+
+    function formatURLGeo() {
+      let url = new URL(apiURL);
+      url.searchParams.set("lat", lat);
+      url.searchParams.set("lon", lon);
+      url.searchParams.set("appid", apiKey);
+      url.searchParams.set("units", "metric");
+      url.searchParams.set("lang", "ru");
+      return url;
+    }
+  });
 
   function sendRequest() {
     if (!validateInputSearch()) return;
